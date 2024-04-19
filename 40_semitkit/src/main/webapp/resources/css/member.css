@@ -1,0 +1,117 @@
+
+
+.member-wrap {
+/* 회원가입 페이지 전체를 감싸는 div 요소에 대한 스타일 */
+     /* 최대 너비 설정 */
+    max-width: 600px;
+     /* 가운데 정렬 */
+    margin: 0 auto;
+    /* 내부 여백 설정 */
+    padding: 20px; 
+    /* 테두리 설정 */
+    border: 1px solid #ccc; 
+    /* 테두리 모서리 둥글게 설정 */
+    border-radius: 5px; 
+}
+
+.member-wrap h1 {
+/* 제목 스타일 */
+     /* 가운데 정렬 */
+    text-align: center;
+    /* 아래 여백 설정 */
+    margin-bottom: 20px; 
+}
+
+.member-wrap form div {
+/* 폼 요소 스타일 */
+    /* 아래 여백 설정 */
+    margin-bottom: 10px; 
+}
+
+.member-wrap form input[type="text"],
+.member-wrap form input[type="password"] {
+     /* 입력 요소 전체 너비 설정 */
+    width: 0 auto;
+    /* 내부 여백 설정 */
+    padding: 10px; 
+     /* 테두리 설정 */
+    border: 1px solid #ccc;
+     /* 테두리 모서리 둥글게 설정 */
+    border-radius: 5px;
+}
+
+.member-wrap form input[type="button"],
+.member-wrap form button {
+    /* 위아래 10px, 좌우 20px의 여백 설정 */
+    padding: 10px 20px; 
+     /* 배경색 설정 */
+    background-color: #007bff;
+     /* 글자색 설정 */
+    color: #fff;
+     /* 테두리 없음 */
+    border: none;
+     /* 테두리 모서리 둥글게 설정 */
+    border-radius: 5px;
+    /* 커서를 손가락 모양으로 변경 */
+    cursor: pointer; 
+}
+
+.member-wrap form button[type="submit"] {
+    /* 제출 버튼 배경색 설정 */
+    background-color: #28a745; 
+}
+
+.member-wrap form button[type="reset"] {
+    /* 재설정 버튼 배경색 설정 */
+    background-color: #dc3545; 
+}
+
+.member-wrap form #msg-memberId,
+.member-wrap form #msg-memberpassword,
+.member-wrap form #msg-memberphone,
+.member-wrap form #msg-memberpasswordCheck {
+/* 오류 메시지 스타일 */
+    /* 오류 메시지 색상 설정 */
+    color: red; 
+    /* 위 여백 설정 */
+    margin-top: 5px; 
+}
+
+.member-wrap form #msg-memberpasswordCheck {
+     /* 일치 메시지 색상 설정 */
+    color: green;
+}
+.id-width {
+	width: 70%;
+}
+.pwd-width{
+	width: 80%;
+}
+.pwdch-width{
+	width:  75%;
+}
+.name-width{
+	width: 86%;
+}
+.phone-width {
+	width: 80%;
+}
+.email-width {
+	width: 50%;
+}
+
+.address2-width {
+	width: 90%;
+}
+
+.address3-width,
+.address4-width{
+	width: 42%;
+}  
+
+.find-btn{
+	text-align: center;
+}
+.find-btn1{
+	display :inline-block;
+}
