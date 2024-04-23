@@ -150,6 +150,7 @@ public class MemberDao {
 //		close(pstmt);
 //		return result;
 //	}
+
 	
 	// insert
 	// 새로운 회원 정보를 데이터베이스에 추가하는 메서드

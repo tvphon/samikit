@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.oreilly.servlet.MultipartRequest;
+
 import kh.mclass.semitkit.member.model.service.MemberService;
 import kh.mclass.semitkit.member.model.dto.MemberJoinDto;
 
@@ -44,7 +46,7 @@ public class MemberController extends HttpServlet {
 		String email = request.getParameter("email")+request.getParameter("email2");
 		
 		String address = request.getParameter("address")+request.getParameter("address2")+request.getParameter("address3")+request.getParameter("address4");
-		System.out.println(userPwd);
+		System.out.println(userPwd+userPwd+userName+phone+email+address);
 		
 		MemberJoinDto dto = new MemberJoinDto(userId, userPwd, userName,phone,email,address);
 		System.out.println(dto);
@@ -56,8 +58,7 @@ public class MemberController extends HttpServlet {
 			return;
 		}
 		// 회원가입정상
-		
-			response.sendRedirect(request.getContextPath()+"/login");
+		response.sendRedirect(request.getContextPath()+"/login");
 		
 		
 	}

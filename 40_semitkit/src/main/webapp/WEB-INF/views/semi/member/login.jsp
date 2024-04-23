@@ -1,23 +1,32 @@
+<jsp:include page="/WEB-INF/views/common/link_files.jsp"/>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Semim Login</title>
+<link href="<%=request.getContextPath()%>/resources/css/login.css" rel="stylesheet">
+<title>Login</title>
 <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
 </head>
 <body>
-<h1>Semim Login</h1>
+	<div>
+        <%@include file="/WEB-INF/views/semi/mainlogoutheader.jsp" %>
+    </div>
 
-<fieldset>
-	<legend>로그인 ajax</legend>
-	<form id="frm-login">
-		<div><label>아이디</label><input type="text" name="id"></div>
-		<div><label>패스워드</label><input type="password" name="pwd"></div>
-		<div><input type="button" value="로그인" class="btn submit"></div>
-	</form>
-</fieldset>
+<form id="frm-login">
+  <div><label for="id">아이디</label><input type="text" id="id" name="id"></div>
+  <div><label for="pwd">패스워드</label><input type="password" id="pwd" name="pwd"></div>
+  <div>
+    <input type="checkbox" id="remember" name="remember">
+    <label for="remember">아이디 저장</label>
+  </div>
+  <div class="form-links">
+    <a href="#" class="find-id">아이디 찾기</a> |
+    <a href="#" class="find-password">비밀번호 찾기</a>
+  </div>
+  <div><input type="button" value="로그인" class="btn submit"></div>
+</form>
 
 <script>
 $(loadedHandler);

@@ -1,0 +1,77 @@
+/* 전체 페이지 스타일 */
+body {
+  margin: 0; /* 페이지 바깥 여백 설정 */
+  padding: 0; /* 페이지 안 여백 설정 */
+  font-family: Arial, sans-serif; /* 전체 페이지에 사용할 폰트 설정 */
+  background-color: #f9f9f9; /* 페이지 배경색 설정 */
+}
+
+/* 로그인 폼 스타일 */
+#frm-login {
+  width: 450px; /* 폼 너비 설정 */
+  margin: 0 auto; /* 가운데 정렬 */
+  margin-top: 181px;  /* 위쪽 여백 설정 */
+  padding: 30px; /* 폼 안 여백 설정 */
+  background-color: #fff; /* 폼 배경색 설정 */
+  border-radius: 5px; /* 폼 테두리 모서리 둥글게 설정 */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* 그림자 효과 추가 */
+}
+
+#frm-login h1 {
+  margin-bottom: 20px; /* 제목 아래 여백 설정 */
+  font-size: 24px; /* 제목 폰트 크기 설정 */
+  text-align: center; /* 제목 가운데 정렬 */
+}
+
+/* 라벨 스타일 */
+#frm-login label {
+  display: block; /* 라벨을 블록 요소로 설정하여 한 줄에 하나씩 표시 */
+  margin-bottom: 10px; /* 라벨 아래 여백 설정 */
+  font-weight: bold; /* 라벨 텍스트 굵게 설정 */
+}
+
+/* 입력 필드 스타일 */
+#frm-login input[type="text"],
+#frm-login input[type="password"] {
+  width: calc(100% - 12px); /* 입력 필드 너비 설정 */
+  padding: 12px; /* 입력 필드 안 여백 설정 */
+  margin-bottom: 20px; /* 입력 필드 아래 여백 설정 */
+  border: 1px solid #ccc; /* 입력 필드 테두리 설정 */
+  border-radius: 5px; /* 입력 필드 테두리 모서리 둥글게 설정 */
+}
+
+/* 체크박스 스타일 */
+#frm-login input[type="checkbox"] {
+  margin-right: 5px; /* 체크박스 오른쪽 여백 설정 */
+  vertical-align: middle; /* 체크박스 수직 정렬 설정 */
+}
+
+/* 링크 그룹 스타일 */
+.form-links {
+  margin-bottom: 20px; /* 링크 그룹 아래 여백 설정 */
+  text-align: center; /* 링크 그룹 가운데 정렬 */
+}
+
+.form-links a {
+  text-decoration: none; /* 링크에 밑줄 제거 */
+  color: #007bff; /* 링크 색상 설정 */
+}
+
+.form-links a:hover {
+  text-decoration: underline; /* 마우스 호버시 밑줄 추가 */
+}
+
+/* 로그인 버튼 스타일 */
+.btn.submit {
+  width: 100%; /* 버튼 너비 설정 */
+  padding: 15px; /* 버튼 안 여백 설정 */
+  background-color: #007bff; /* 버튼 배경색 설정 */
+  color: #fff; /* 버튼 텍스트 색상 설정 */
+  border: none; /* 버튼 테두리 제거 */
+  border-radius: 5px; /* 버튼 테두리 모서리 둥글게 설정 */
+  cursor: pointer; /* 마우스 호버 시 커서 모양 변경 */
+}
+
+.btn.submit:hover {
+  background-color: #0056b3; /* 마우스 호버시 버튼 배경색 변경 */
+}

@@ -1,0 +1,70 @@
+.black {
+	width: 100%;
+	height: 185px;
+}
+
+
+/* 왼쪽 사이드바 스타일 */
+.sidebar {
+    width: calc(60% - 10px); /* 전체 너비의 60%에서 여백 10px을 빼서 차지 */
+    float: left; /* 왼쪽 정렬 */
+     height: 960px; /* 높이를  아래 쪽으로 키웁니다. */
+
+}
+
+/* 메인 콘텐츠 스타일 */
+.main-content {
+    width: calc(40% - 20px); /* 전체 너비의 40%에서 여백 20px을 빼서 차지 */
+    float: left; /* 왼쪽 정렬 */
+    padding: 0 10px; /* 내부 여백 설정 */
+    height: 900px; /* 높이를 조정하여 아래 쪽으로 키웁니다. */
+    box-sizing: border-box; /* padding 값도 너비에 포함되도록 설정 */
+}
+
+/* BEST 상품과 NEW 상품 섹션 스타일 */
+.best-products, .new-products {
+    width: 100%; /* 전체 너비를 차지하여 꽉 채웁니다. */
+    height: 50%; /* 상품 섹션의 높이를 반으로 설정합니다. */
+    float: left; /* 왼쪽 정렬 */
+    margin-bottom: 20px; /* 하단 여백 추가 */
+    text-align: center; /* h2 요소를 가운데 정렬하기 위해 텍스트 정렬을 설정합니다. */
+}
+/* BEST 상품과 NEW 상품 섹션의 h2 요소 스타일 */
+.best-products h2, .new-products h2{
+    text-align: center; /* 텍스트 가운데 정렬 */
+    margin: 10px;/* 상하 여백 설정 */
+}
+
+/* 개별 상품 스타일 */
+.best-products .product, .new-products .product {
+    width: calc(50% - 10px); /* 각 상품 요소의 너비를 조정하여 2등분합니다. */
+    float: left; /* 왼쪽 정렬 */
+    margin-right: 10px; /* 오른쪽 여백 추가 */
+}
+
+/* 마지막 상품 오른쪽 여백 제거 */
+.best-products .product:last-child, .new-products .product:last-child {
+    margin-right: 0; /* 마지막 상품의 오른쪽 여백 제거 */
+}
+
+/* 왼쪽 사이드바 이미지 스타일 설정 */
+.sidebar img {
+    width: 100%; /* 이미지 너비 100%로 설정하여 부모 요소에 맞춤 */
+	height: 960px; /* 이미지 높이를 설정 */
+   
+}
+
+/* 개별 상품 이미지 스타일 설정 */
+.product img {
+    width: 100%; /* 이미지 너비 100%로 설정하여 부모 요소에 맞춤 */
+    height: 280px; /* 각 상품 이미지의 높이를 280px로 설정합니다. */
+}
+/* .product 클래스의 스타일 */
+.product {
+
+	height: 100%; /* .product 요소의 높이를 부모 요소에 맞춥니다. */
+}
+/* .product 내부의 p 태그 스타일 설정 */
+.product p {
+	margin: 10px; /* 상하 여백 설정 */
+}
