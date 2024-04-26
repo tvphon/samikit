@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "https://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="productMapper">
+	<select id="selectFileList" parameterType="FileReadDto">
+		SELECT  IMGMAIN1, PRODUCT_PRICE, PRODUCT_NAME
+		FROM PRODUCT WHERE IMGMAIN1=#{abc}
+	</select>
+	<select id="selectPageListSort" resultType="ProductListDto" parameterType="map">
+		select  PRODUCT_KEY, IMGMAIN1, PRODUCT_PRICE, PRODUCT_NAME, PRODUCT_ENROLL 
+			from (select t1.*, rownum rn  
+				from (SELECT  PRODUCT_KEY, IMGMAIN1, PRODUCT_PRICE , PRODUCT_NAME, PRODUCT_ENROLL FROM PRODUCT order by PRODUCT_KEY desc) t1 )
+		where rn between #{startRownum} and #{endRownum}
+	</select>
+	<select id="selectPageList" resultType="ProductListDto" parameterType="map">
+		select  PRODUCT_KEY, IMGMAIN1, PRODUCT_PRICE, PRODUCT_NAME, PRODUCT_ENROLL 
+			from (select t1.*, rownum rn  
+				from (SELECT  PRODUCT_KEY,IMGMAIN1, PRODUCT_PRICE , PRODUCT_NAME , PRODUCT_ENROLL FROM PRODUCT order by PRODUCT_KEY desc) t1 )
+		where rn between #{startRownum} and #{endRownum}
+	</select>
+	
+	<select id="selectTotalCount" resultType="int">
+		select count(*) cnt from PRODUCT
+	</select>
+	
+	<select id="selectAllList" resultType="ProductListDto">
+		SELECT  PRODUCT_KEY, IMGMAIN1, PRODUCT_PRICE, PRODUCT_NAME, PRODUCT_ENROLL    
+		FROM PRODUCT
+	</select>
+
+<!-- //	PRODUCT_KEY      NOT NULL NUMBER        
+//	IMGMAIN1         NOT NULL VARCHAR2(200) 
+//	PRODUCT_PRICE    NOT NULL NUMBER        
+//	PRODUCT_DISCOUNT NOT NULL NUMBER        
+//	PRODUCT_NAME     NOT NULL VARCHAR2(100) 
+//	PRODUCT_STOCK    NOT NULL NUMBER        
+//	PRODUCT_SELL     NOT NULL NUMBER        
+//	CATEGORY_KEY     NOT NULL NUMBER   -->
+</mapper>

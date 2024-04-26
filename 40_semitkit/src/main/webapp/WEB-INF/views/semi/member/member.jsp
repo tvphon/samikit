@@ -12,7 +12,7 @@
 </head>
 <body>
 	<div>
-        <%@include file="/WEB-INF/views/semi/mainlogoutheader.jsp" %>
+        <%@include file="/WEB-INF/views/semi/mainloginoutheader.jsp" %>
     </div>
 	<div class="member-wrap">
 	<h1>회원가입</h1>

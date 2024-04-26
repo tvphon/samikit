@@ -1,0 +1,43 @@
+
+/* 상품 그리드 스타일 */
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    margin-top: 20px;
+}
+
+/* 각 상품 스타일 */
+.product {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+/* 상품 이미지 스타일 */
+.product img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+}
+
+/* 상품명 스타일 */
+.product-name {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* 상품 가격 스타일 */
+.product-price {
+    color: #007bff;
+    margin-top: 5px;
+}
+
+.flex ul {
+list-style-type:none;
+text-align: center;
+}
+.flex ul > li {
+display: inline-block;
+padding: 0 10px;
+}

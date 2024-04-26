@@ -18,10 +18,10 @@ public class JdbcTemplate {
 		Properties prop = new Properties();
 		try {
 			String currentPath = JdbcTemplate.class.getResource("./").getPath(); 
-			prop.load(new FileReader(currentPath+"driver.properties"));
+			prop.load(new FileReader(currentPath+"db.properties"));
 			Class.forName(prop.getProperty("jdbc.driver"));
 			if(isLocalhost) {
-				conn = DriverManager.getConnection(prop.getProperty("jdbc.url")
+				conn = DriverManager.getConnection(prop.getProperty("jdbc.semi.dbserver.url")
 						, prop.getProperty("jdbc.semi.username")
 						, prop.getProperty("jdbc.semi.password"));
 			} else {

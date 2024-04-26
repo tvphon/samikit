@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div>
-        <%@include file="/WEB-INF/views/semi/mainlogoutheader.jsp" %>
+        <%@include file="/WEB-INF/views/semi/mainloginoutheader.jsp" %>
     </div>
     <div class="black"></div>
     

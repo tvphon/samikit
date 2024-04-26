@@ -7,13 +7,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import kh.mclass.semitkit.product.model.service.ProductService;
+
 /**
  * Servlet implementation class ShoppingController
  */
 @WebServlet("/shopping")
 public class ShoppingController extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+	
     /**
      * @see HttpServlet#HttpServlet()
      */
